@@ -9,12 +9,7 @@
     "prod": "npm run production",
     "production": "mix --production",
     "lint": "eslint ./resources/frontend/** --ext .ts --ext .tsx --fix",
-    "commit": "git-cz"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
+    "c": "git-cz && git pull"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.13.13",
