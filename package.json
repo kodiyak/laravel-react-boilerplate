@@ -11,6 +11,11 @@
     "lint": "eslint ./resources/frontend/** --ext .ts --ext .tsx --fix",
     "commit": "git-cz"
   },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.13.13",
     "@commitlint/cli": "^12.1.1",
