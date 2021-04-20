@@ -10,11 +10,6 @@
     "production": "mix --production",
     "lint": "eslint ./resources/frontend/** --ext .ts --ext .tsx --fix"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
     "@babel/preset-react": "^7.13.13",
     "@commitlint/cli": "^12.1.1",
