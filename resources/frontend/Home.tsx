@@ -6,6 +6,7 @@ import { useDisclosure } from './hooks/useDisclosure'
 import ContainerScreen from './components/Utils/ContainerScreen'
 import Col from './components/Utils/Col'
 import Title from './components/Ux/Page/Title'
+import AppResume from './components/Ux/Debug/AppResume'
 
 const Home: React.FC = () => {
   const { onOpen } = useDisclosure('Modal.Test')
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
     <ContainerScreen>
       <Title value="Home Page" />
       <Col h={250} bg="gray.700"></Col>
+      <AppResume />
     </ContainerScreen>
   )
 }

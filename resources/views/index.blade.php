@@ -10,7 +10,9 @@
 
     <script type="text/javascript">
         const APP_CONFIG = {
-            name: "{{env('APP_NAME')}}"
+            name: "{{env('APP_NAME')}}",
+            appURL: "{{env('APP_URL')}}",
+            apiURL: "{{env('API_URL')}}",
         }
     </script>
 </head>
