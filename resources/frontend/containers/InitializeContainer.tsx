@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useColorMode } from '@chakra-ui/react'
+import DisclosureContainer from './Disclosure/DisclosureContainer'
 
 const InitializeContainer: React.FC = ({ children }) => {
   const { setColorMode } = useColorMode()
@@ -9,7 +10,12 @@ const InitializeContainer: React.FC = ({ children }) => {
     }
   }, [setColorMode])
 
-  return <>{children}</>
+  return (
+    <>
+      <DisclosureContainer />
+      {children}
+    </>
+  )
 }
 
 export default InitializeContainer
