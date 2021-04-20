@@ -9,7 +9,7 @@
     "prod": "npm run production",
     "production": "mix --production",
     "lint": "eslint ./resources/frontend/** --ext .ts --ext .tsx --fix",
-    "c": "git-cz && git pull"
+    "c": "git-cz && git push"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.13.13",
