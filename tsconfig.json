@@ -18,15 +18,11 @@
         "forceConsistentCasingInFileNames": true,
         "module": "esnext",
         "resolveJsonModule": true,
-        "downlevelIteration": true,
-        "typeRoots": [
-            "node_modules/@types",
-            "resources/@types"
-        ]
+        "downlevelIteration": true
     },
     "include": [
-        "**/*.ts",
-        "**/*.tsx"
+        "resources/**/*.ts",
+        "resources/**/*.tsx"
     ],
     "exclude": [
         "node_modules",

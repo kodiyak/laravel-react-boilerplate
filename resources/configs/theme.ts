@@ -38,8 +38,8 @@ const theme = extendTheme({
     outline: 'none',
   },
   fonts: {
-    body: '"Nunito", sans-serif',
-    heading: '"Nunito", sans-serif',
+    body: '"Rajdhani", sans-serif',
+    heading: '"Rajdhani", sans-serif',
   },
   fontSizes: {
     ...themeChakra.fontSizes,

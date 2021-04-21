@@ -7,6 +7,7 @@
     <title>{{ env('APP_NAME') }}</title>
 
     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <script type="text/javascript">
         const APP_CONFIG = {
