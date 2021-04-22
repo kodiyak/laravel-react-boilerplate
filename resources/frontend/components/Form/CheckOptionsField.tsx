@@ -6,11 +6,11 @@ import {
   useSelectOption,
 } from '../../hooks/helpers/useSelectOption'
 
-interface CheckOptionsInputProps extends SelectOptionProps {
+interface CheckOptionsFieldProps extends SelectOptionProps {
   CheckComponent?: React.FC
 }
 
-const CheckOptionsInput: React.FC<CheckOptionsInputProps> = ({
+const CheckOptionsField: React.FC<CheckOptionsFieldProps> = ({
   CheckComponent = SquareCheck,
   ...props
 }) => {
@@ -38,4 +38,4 @@ const CheckOptionsInput: React.FC<CheckOptionsInputProps> = ({
   )
 }
 
-export default CheckOptionsInput
+export default CheckOptionsField

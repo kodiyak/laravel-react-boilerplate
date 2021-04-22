@@ -9,8 +9,8 @@ import Title from './components/Ux/Page/Title'
 import AppResume from './components/Ux/Debug/AppResume'
 import { FormProvider } from './contexts/FormProvider'
 import InputField from './components/Form/InputField'
-import CheckOptionsInput from './components/Form/CheckOptionsInput'
-import DropdownOptionsInput from './components/Form/DropdownOptionsInput'
+import CheckOptionsField from './components/Form/CheckOptionsField'
+import DropdownOptionsField from './components/Form/DropdownOptionsField'
 import Row from './components/Utils/Row'
 import { Text } from '@chakra-ui/layout'
 import { DownIcon } from './components/Ux/Icons'
@@ -42,7 +42,7 @@ const Home: React.FC = () => {
           description="Max. 200 characters"
         />
         <SimpleGrid columns={4} gap={4}>
-          <CheckOptionsInput
+          <CheckOptionsField
             CheckComponent={Checkbox}
             isMultiple
             name="test"
@@ -63,8 +63,8 @@ const Home: React.FC = () => {
               <Text mr="auto">Select...</Text>
               <DownIcon />
             </Row>
-          </CheckOptionsInput>
-          <DropdownOptionsInput
+          </CheckOptionsField>
+          <DropdownOptionsField
             isMultiple
             name="test"
             index="id"
@@ -84,7 +84,7 @@ const Home: React.FC = () => {
               <Text mr="auto">Select...</Text>
               <DownIcon />
             </Row>
-          </DropdownOptionsInput>
+          </DropdownOptionsField>
         </SimpleGrid>
         <Button type="submit">Enviar</Button>
       </FormProvider>
