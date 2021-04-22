@@ -1,7 +1,7 @@
 import { useField } from '@unform/core'
 import { useState, useEffect } from 'react'
 
-export function useFieldState<T>(name: string, initialValue: T) {
+export function useFieldState<T>(name: string, initialValue?: T) {
   const field = useField(name)
   const [value, setValue] = useState<T>(initialValue)
 

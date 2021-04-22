@@ -15,6 +15,7 @@ import Row from './components/Utils/Row'
 import { Text } from '@chakra-ui/layout'
 import { DownIcon } from './components/Ux/Icons'
 import TextareaField from './components/Form/TextareaField'
+import BoxFileField from './components/Form/BoxFileField'
 
 const Home: React.FC = () => {
   const { onOpen } = useDisclosure('Modal.Test')
@@ -85,6 +86,14 @@ const Home: React.FC = () => {
               <DownIcon />
             </Row>
           </DropdownOptionsField>
+          <BoxFileField
+            name="file"
+            w={100}
+            h={100}
+            rounded="lg"
+            bg="primary.500"
+            color="white"
+          ></BoxFileField>
         </SimpleGrid>
         <Button type="submit">Enviar</Button>
       </FormProvider>
