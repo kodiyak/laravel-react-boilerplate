@@ -24,7 +24,7 @@ const Home: React.FC = () => {
   return (
     <ContainerScreen overflowY="auto">
       <Title value="Home Page" />
-      <Col h={250} bg="gray.700"></Col>
+      {/* <Col h={250} bg="gray.700"></Col> */}
       <AppResume />
       <FormTest />
     </ContainerScreen>
