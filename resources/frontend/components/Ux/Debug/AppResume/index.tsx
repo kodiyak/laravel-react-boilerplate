@@ -1,4 +1,4 @@
-import { SimpleGrid, Image } from '@chakra-ui/react'
+import { SimpleGrid, Image, Heading } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import App from '../../../../../app/App'
 import Col from '../../../Utils/Col'
@@ -18,6 +18,9 @@ const AppResume: React.FC = () => {
   return (
     <Col>
       <BoxContainer>
+        <Row my={2}>
+          <Heading>Application Health Check</Heading>
+        </Row>
         <SimpleGrid gap={2} columns={5} py={4}>
           <ItemResume
             src={'https://i.imgur.com/UGXLi1S.png'}

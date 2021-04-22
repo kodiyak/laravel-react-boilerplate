@@ -16,87 +16,17 @@ import { Text } from '@chakra-ui/layout'
 import { DownIcon } from './components/Ux/Icons'
 import TextareaField from './components/Form/TextareaField'
 import BoxFileField from './components/Form/BoxFileField'
+import FormTest from './components/Ux/Debug/FormTest/index'
 
 const Home: React.FC = () => {
   const { onOpen } = useDisclosure('Modal.Test')
 
   return (
-    <ContainerScreen>
+    <ContainerScreen overflowY="auto">
       <Title value="Home Page" />
       <Col h={250} bg="gray.700"></Col>
       <AppResume />
-      <FormProvider
-        onSubmit={(data) => {
-          console.log('data', data)
-        }}
-      >
-        <InputField
-          name="title"
-          label="Titulo"
-          description="Pai ta on"
-          placeholder="Salve do cachorro loca!"
-        />
-        <InputField name="description" label="Descrição" />
-        <TextareaField
-          name="long_description"
-          label="Descrição Longa \o\"
-          description="Max. 200 characters"
-        />
-        <SimpleGrid columns={4} gap={4}>
-          <CheckOptionsField
-            CheckComponent={Checkbox}
-            isMultiple
-            name="test"
-            index="id"
-            label="label"
-            options={[
-              {
-                label: 'Salve',
-                id: 1,
-              },
-              {
-                label: 'Salva',
-                id: 2,
-              },
-            ]}
-          >
-            <Row p={4}>
-              <Text mr="auto">Select...</Text>
-              <DownIcon />
-            </Row>
-          </CheckOptionsField>
-          <DropdownOptionsField
-            isMultiple
-            name="test"
-            index="id"
-            label="label"
-            options={[
-              {
-                label: 'Salve',
-                id: 1,
-              },
-              {
-                label: 'Salva',
-                id: 2,
-              },
-            ]}
-          >
-            <Row p={4}>
-              <Text mr="auto">Select...</Text>
-              <DownIcon />
-            </Row>
-          </DropdownOptionsField>
-          <BoxFileField
-            name="file"
-            w={100}
-            h={100}
-            rounded="lg"
-            bg="primary.500"
-            color="white"
-          ></BoxFileField>
-        </SimpleGrid>
-        <Button type="submit">Enviar</Button>
-      </FormProvider>
+      <FormTest />
     </ContainerScreen>
   )
 }
